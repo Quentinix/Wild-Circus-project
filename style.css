@@ -14,11 +14,11 @@ body{
 	background-color: #1900ff;
 }
 
-.header{
+header{
 	background-color: #1900ff;
 }
 
-.header .label{
+header .label{
 	font-size: 55px;
 	padding: 20px;
 	padding-left: 50px;
@@ -27,51 +27,47 @@ body{
 }
 
 @media screen and (max-width: 540px){
-	.header .label{
+	header .label{
 		padding: 0;
 		text-align: center;
 		padding: 20px 0 0 0;
 	}
 }
 
-.header .logo{
+header .logo{
 	right: 5px;
 	top: 0;
 	position: absolute;
 }
 
 @media screen and (max-width: 540px){
-	.header .logo{
+	header .logo{
 		position: inherit;
 		text-align: center;
 	}
 }
 
-.header .logo img{
+header .logo img{
 	width: 190px;
 }
 
-.body{
+body{
 	background-color: #1900ff;
 }
 
-.body .performance{
-	
-}
-
-.body .performance .center_performance{
+section .performance .center_performance{
 	max-width: 984px;
 	margin-right: auto;
 	margin-left: auto;
 }
 
-@media screen and (max-width: 984px){
-	.body .performance .center_performance{
+@media screen and (max-width: 984px){ /* Media query déjà présent dans la première version */
+	section .performance .center_performance{
 		max-width: 494px;
 	}
 }
 
-.body .performance .center_performance .module{
+section .performance .center_performance article{
 	background-color: rgba(255, 255, 255, 0.95);
 	max-width: 450px;
 	width: 91%;
@@ -82,46 +78,42 @@ body{
 	text-align: center;
 }
 
-.body .performance .center_performance .module h3{
+section .performance .center_performance article h3{
 	text-align: left;
 }
 
-.body .performance .center_performance .module .canon{
+section .performance .center_performance article #canon{ /* Ajout ID */
 	width: 271px;
 }
 
-.body .performance .center_performance .module .clown{
+section .performance .center_performance article #clown{ /* Ajout ID */
 	width: 218px;
 }
 
-.body .performance .center_performance .module .tigre{
+section .performance .center_performance article #tigre{ /* Ajout ID */
 	width: 160px;
 }
 
-.body .performance .center_performance .module .acrobat{
+section .performance .center_performance article #acrobat{ /* Ajout ID */
 	width: 203px;
 }
 
-.body .performance .center_performance .module span{
+section .performance .center_performance article span{
 	display: none;
 }
 
-.body .tarif{
-	
-}
-
-.body .tarif .center_tarif{
+section .tarif .center_tarif{
 	margin: auto;
 	max-width: 684px;
 }
 
-@media screen and (max-width: 709px){
-	.body .tarif .center_tarif{
+@media screen and (max-width: 709px){ /* Media query déjà présent dans la première version */
+	section .tarif .center_tarif{
 		max-width: 340px;
 	}
 }
 
-.body .tarif .center_tarif .module{
+section .tarif .center_tarif article{
 	background-color: rgb(255, 249, 110);
 	display: inline-grid;
 	width: 300px;
@@ -131,20 +123,22 @@ body{
 	box-shadow: 0 2px 2px 0px black;
 }
 
-.body .tarif .center_tarif .module .rate{
-	left: 33px;
+section .tarif .center_tarif article .rate{
+	/* left: 33px; */ /*Relative supprimée*/
 	font-size: 30px;
-	position: relative;
+	/* position: relative; */ /*Relative supprimée*/
+	padding-left: 40px;
 	font-weight: bold;
 }
 
-.body .tarif .center_tarif .module .buy{
-	position: relative;
-	left: 33px;
+section .tarif .center_tarif article .buy{
+	/* position: relative; */ /*Relative supprimée*/
+	/* left: 33px; */ /*Relative supprimée*/
+	padding-left: 40px;
 	font-size: 22px;
 }
 
-.body .tarif .center_tarif .module .buy input{
+section .tarif .center_tarif article .buy input{
 	width: 38px;
 	padding: 3px;
 	font-size: 18px;
@@ -153,39 +147,38 @@ body{
 	border-radius: 2px;
 }
 
-.body .tarif .center_tarif .module .buy input[type=submit]{
+section .tarif .center_tarif article .buy input[type=submit]{
 	width: 121px;
 	border: solid 1px #b30000;
 	background-image: linear-gradient(#f00, #f50000,#f00);
 }
 
-.body .tarif .center_tarif .module .buy input[type=submit]:hover{
+section .tarif .center_tarif article .buy input[type=submit]:hover{
 	background-image: linear-gradient(#f00, #ff1d1d,#f00);
 }
 
-.footer{
+footer{
 	background-color: #1900ff;
 }
 
-.footer .module{
-	
-display: inline-block;
+footer article{
+	display: inline-block;
 }
 
-.footer .module .copy{
+footer article .copy{
 	background-color: #ab9d9d;
 	padding: 10px 10px 10px 90px;
 	margin: 30px 10px 30px 0;
-	position: relative;
+	position: relative; /*Relative obligatoire pour faire sortir la div de l'écran et donc assurer le positionnement de l'ombre */
 	left: -63px;
 	box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.8);
 }
 
-.footer .module .lien{
+footer article .lien{
 	background-color: #ab9d9d;
 	padding: 6px 30px 6px 30px;
 	margin: 10px;
-	position: relative;
+	/* position: relative; */ /*Relative supprimée*/
 }
 
 /* Adding */

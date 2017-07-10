@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
+		<!-- Version: 1.0.1.10072017.2 Qµentih -->
 		<title>Wild Circus</title>
 		<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 		<script type="text/javascript" src="application.js"></script>
@@ -9,56 +10,56 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	</head>
 	<body>
-		<div class=header>
+		<header> <!-- Utilisation html tag header body footer -->
 			<div class=label>
 				Wild Circus
 			</div>
 			<div class=logo>
-				<img src='img/logo.png' />
+				<img src='img/logo.png' alt="Logo" />
 			</div>
-		</div>
-		<div class=body>
+		</header>
+		<section>
 			<div class=split>The Show</div>
 			<div class=performance>
 				<div class="center_performance">
-					<div class=module>
+					<article>
 						<h3>Cannon Man</h3>
-						<img class=canon src=img/canon.png />
+						<img id=canon src=img/canon.png alt="cannon picture" /> <!-- Remplacement des class par des ID pour les performances -->
 						<span>
 							Come discover just above your heads the cannon man who runs on each pulls the distance of 423 meters!
 							<br />
 							A feat to see at least once in your life!
 						</span>
-					</div>
-					<div class=module>
+					</article>
+					<article>
 					<h3>The Tigers</h3>
-						<img class=tigre src=img/tigre.png />
+						<img id=tigre src=img/tigre.png alt="Tigre picture" />
 						<span>
 							Four tigers from Asia will surprise you on the track by their number never seen before.
 						</span>
-					</div>
-					<div class=module>
+					</article>
+					<article>
 					<h3>French Toast</h3>
-						<img class=clown src=img/clown.png />
+						<img id=clown src=img/clown.png alt="Clown picture" />
 						<span>
 							Clown show playing the kitchen and revisits the famous French toast.
 							<br />
 							Warning: Abuse of laughter is good for your health!
 						</span>
-					</div>
-					<div class=module>
+					</article>
+					<article>
 					<h3>Acrobate Reader</h3>
-						<img class=acrobat src=img/acrobat.png />
+						<img id=acrobat src=img/acrobat.png alt="Acrobat picture" />
 						<span>
 							The acrobats will give you the height thanks to their trampoline, and will facinate you with the saltos.
 						</span>
-					</div>
+					</article>
 				</div>
 			</div>
 			<div class=split>Ticketing</div>
 			<div class=tarif>
 				<div class="center_tarif">
-					<div class=module>
+					<article>
 						<h3>Rate</h3>
 						<div class=rate>
 							Child : <span class=rate_child>13</span> €
@@ -67,8 +68,8 @@
 							<br />
 							Senior : <span class=rate_senior>14</span> €
 						</div>
-					</div>
-					<div class=module>
+					</article>
+					<article>
 						<h3>Buy</h3>
 						<form class=buy id=buy method="post" action=#buy>
 							Child : <input type=number class=buy_child value=0 />
@@ -81,21 +82,21 @@
 							<br />
 							<input type=submit value=Order />
 						</form>
-					</div>
+					</article>
 				</div>
 			</div>
-		</div>
-		<div class=footer>
-			<div class=module>
+		</section>
+		<footer>
+			<article>
 				<div class=copy>
 					Wild Circus&copy;2017
 				</div>
-			</div>
-			<div class=module>
+			</article>
+			<article>
 				<div class=lien>
-					<a target="wild_circus_robozzle" href="http://www.robozzle.com/user.aspx?name=quentinix">RoboZZle here</a> | <a target="wild_circus_jsfiddle" href="https://jsfiddle.net/Quentinix/99u6qyh3/11/">jsfiddle release</a>
+					<a target="wild_circus_robozzle" href="http://www.robozzle.com/user.aspx?name=quentinix">RoboZZle here</a> | <a target="wild_circus_jsfiddle" href="https://jsfiddle.net/Quentinix/9bnd8bpp/4/">jsfiddle release</a> |Release 2|
 				</div>
-			</div>
-		</div>
+			</article>
+		</footer>
 	</body>
 </html>

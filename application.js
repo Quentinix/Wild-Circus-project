@@ -1,8 +1,8 @@
 $(document).ready(function() {
 	/*Affichage texte performance*/
 	function togglePerfor() {$(this).find('span').slideToggle()};
-	$('.performance').on('mouseenter', '.module', togglePerfor);
-	$('.performance').on('mouseleave', '.module', togglePerfor);
+	$('.performance').on('mouseenter', 'article', togglePerfor);
+	$('.performance').on('mouseleave', 'article', togglePerfor);
 	
 	/*Calcul prix total*/
 	function calc_child(){
