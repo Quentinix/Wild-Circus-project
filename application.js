@@ -1,9 +1,11 @@
 $(document).ready(function() {
-	/*Div de chargement*/
-	var charge = $('.chargement').animate({opacity: "0"}, 500);
-	setTimeout(function(){
-		charge.css({display: "none"})
-	}, 500);
+	/*Chargement de la page*/
+	$(window).on('load', function() {
+		var charge = $('.chargement').animate({opacity: "0"}, 500);
+		setTimeout(function(){
+			charge.css({display: "none"})
+		}, 500);
+	});
 	
 	/*Affichage texte performance*/
 	function togglePerfor() {$(this).find('span').slideToggle()};
