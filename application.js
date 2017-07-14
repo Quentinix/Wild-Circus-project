@@ -4,6 +4,7 @@ $(document).ready(function() {
 		var charge = $('.chargement').animate({opacity: "0"}, 500);
 		setTimeout(function(){
 			charge.css({display: "none"})
+			charge.closest("body").css({overflow: 'visible'})
 		}, 500);
 	});
 	
