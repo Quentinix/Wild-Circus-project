@@ -190,3 +190,25 @@ footer article .lien{
 	font-size: 22px;
 	color: #eaeaea;
 }
+
+@keyframes chargement{
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+.chargement{
+	background-color: blueviolet;
+	position: fixed;
+	text-align: center;
+	width: 100%;
+	height: 100%;
+	padding-top: 100px;
+}
+
+.chargement img{
+	animation: chargement 1s linear infinite;
+}
